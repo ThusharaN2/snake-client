@@ -15,6 +15,10 @@ const connect = function () {
   conn.on('data', (data) => {
     console.log('Server says: ', data);
   });
+  //  setInterval(() => {
+  //    conn.write('Move: up');
+  //  }, 50);
+
 
   return conn;
 }
