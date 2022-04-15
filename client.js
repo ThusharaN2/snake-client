@@ -1,4 +1,4 @@
-const net = require('net');
+const { net } = require('net');
 
 const connect = function () {
   const conn = net.createConnection({
@@ -18,6 +18,7 @@ const connect = function () {
   //  setInterval(() => {
   //    conn.write('Move: up');
   //  }, 50);
+
 
 
   return conn;
