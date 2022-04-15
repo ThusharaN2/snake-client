@@ -1,3 +1,5 @@
+const {IP, PORT, up, down, left, right, sneaky, cocky, winning} = require('./constants')
+
 const { stdin } = require('process');
 const { connect } = require('./client');
 console.log('Connecting ...');
@@ -5,14 +7,11 @@ connect();
 
 let connection;
 
-const handleUserInput = function() {
-  stdin.on('data', (key) => {
+const handleUserInput = function(key) {
     if (key === '\u0003') {
       process.exit();
     }
-  });
-}; 
-
+ 
 if (key === sneaky){
   connection.write('SSssSSss')
 }
@@ -40,6 +39,7 @@ if (key === down) {
 if (key === right) {
   connection.write('Move: right');
   }
+};
 
   const setupInput = function (conn) {
     connection = conn;

@@ -4,17 +4,18 @@ const up = 'W';
 const down = 's';
 const left = 'a';
 const right = 'd';
-const sneaky = 'Z';
-const cocky = 'X';
-Const winning = 'C'
-
-
-
-
-
-
+const sneaky = 'z';
+const cocky = 'x';
+const winning = 'c'
 
 module.exports = {
   IP,
   PORT,
+  up,
+  down,
+  left,
+  right,
+  sneaky,
+  cocky,
+  winning
 };
