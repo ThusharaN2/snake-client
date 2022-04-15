@@ -13,22 +13,33 @@ const handleUserInput = function() {
   });
 }; 
 
+if (key === 'Z'){
+  connection.write('SSssSSss')
+}
+
+if (key === 'x') {
+  connection.write('BOOYAAA!')
+}
+
+if (key === 'c') {
+  connection.write('Eat my dust')
+}
+
 if (key === 'W') {
   connection.write('Move: up')
   } 
-  if (key === 'A') {
+
+if (key === 'A') {
   connection.write('Move: left')
   } 
 
-  if (key ==='S') {
-    connection.write('Move: down')
-    } 
+if (key ==='S') {
+  connection.write('Move: down')
+ } 
 
-  if (key === 'D') {
+if (key === 'D') {
   connection.write('Move: right');
   }
-
-
 
   const setupInput = function (conn) {
     connection = conn;
