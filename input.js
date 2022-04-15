@@ -13,31 +13,31 @@ const handleUserInput = function() {
   });
 }; 
 
-if (key === 'Z'){
+if (key === sneaky){
   connection.write('SSssSSss')
 }
 
-if (key === 'x') {
+if (key === cocky) {
   connection.write('BOOYAAA!')
 }
 
-if (key === 'c') {
+if (key === winning) {
   connection.write('Eat my dust')
 }
 
-if (key === 'W') {
+if (key === up) {
   connection.write('Move: up')
   } 
 
-if (key === 'A') {
+if (key === left) {
   connection.write('Move: left')
   } 
 
-if (key ==='S') {
+if (key === down) {
   connection.write('Move: down')
  } 
 
-if (key === 'D') {
+if (key === right) {
   connection.write('Move: right');
   }
 
